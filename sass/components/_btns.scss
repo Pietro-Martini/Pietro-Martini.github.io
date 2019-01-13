@@ -1,15 +1,8 @@
 .btn {
   @extend %principal-text;
-  &-container {
-    position: relative;
-    svg {
-      position: absolute;
-      top: 50%;
-      right: 38%;
-      transform: translate(-50%, -50%);
-      width: 1rem;
-      height: 1rem;
-    }
+  svg {
+    width: 1rem;
+    height: 1rem;
   }
 
   padding-top: 1.5rem;
