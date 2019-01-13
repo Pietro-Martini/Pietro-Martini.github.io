@@ -1,0 +1,6 @@
+.copyright {
+  @extend %principal-text--small;
+  @include mq(tablet-wide, max) {
+    order: 1;
+  }
+}

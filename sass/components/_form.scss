@@ -1,0 +1,35 @@
+.form {
+  &__input-group {
+    border-radius: 2px;
+    border: 1px solid white;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    position: relative;
+
+    &:not(:last-of-type) {
+      input {
+        border-bottom: 1px solid $m-gray;
+      }
+    }
+  }
+
+  input {
+    border: none;
+    @extend %principal-text;
+  }
+
+  input[type='text'],
+  input[type='password'] {
+    padding: 1rem;
+    background: transparent;
+    width: 100%;
+  }
+
+  ::placeholder {
+    color: $white;
+  }
+}

@@ -1,0 +1,25 @@
+$col-types: (
+  tab: (768px, 1023px),
+  lap: (1024px, 1237px),
+  desk: (1238px, 1439px),
+  lg-desk: (1440px, 3000px)
+);
+
+@mixin generate-cols($num-cols: 12, $col-width: 2%, $row-width: 2%) {
+	@for $i from 2 through $num-cols {
+		$flex-basis: 100% / $i;
+		$not-last-of-type-col-width: ($i * $col-width) / ($i - 1);
+		@each $device, $width in $col-types {		  
+		  @media screen and (min-width: #{nth($width, 1)}) and (max-width: #{nth($width, 2)}) {
+		    .col-#{$device}-#{$i} {
+    			flex: 0 0 ($flex-basis - $col-width);
+    			margin-bottom: $row-width;
+    
+    			&:not(:nth-of-type(#{$i}n)) {
+    				margin-right: $not-last-of-type-col-width;
+    			}
+    		}  
+		  }
+		}
+	}
+}

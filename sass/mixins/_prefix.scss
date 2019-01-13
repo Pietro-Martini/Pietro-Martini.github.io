@@ -1,0 +1,6 @@
+@mixin prefix($prop, $val, $prefixes: ('webkit', 'moz', 'ms', 'o')) {
+	@each $prefix in $prefixes {
+		#{'-' + $prefix + '-' + $prop}: $val;
+	}
+	#{$prop}: $val;
+}

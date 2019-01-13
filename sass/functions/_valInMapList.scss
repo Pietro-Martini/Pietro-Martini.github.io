@@ -1,0 +1,9 @@
+// Apply function to extract values from $secondary-colors map more easily:
+
+// .selector {
+//   color: valInMapList($secondary-colors, emerald-dust, 1);  
+// }
+
+@function valInMapList($map, $prop, $valIndex) {
+  @return nth(map-get($map, $prop), $valIndex)
+}

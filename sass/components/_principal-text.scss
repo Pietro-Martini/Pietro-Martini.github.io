@@ -1,0 +1,21 @@
+.principal-text {
+  @extend %principal-text;
+
+  &--gray {
+    color: $gray-text;
+  }
+
+  &--small {
+    font-size: 1.2rem;
+  }
+}
+
+%principal-text--small {
+  @extend %principal-text;
+  font-size: 1.2rem;
+}
+
+%principal-text--gray {
+  @extend %principal-text;
+  color: $gray-text;
+}

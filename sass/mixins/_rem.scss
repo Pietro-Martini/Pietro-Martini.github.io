@@ -1,0 +1,9 @@
+@function calc-rem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin rem($prop, $val) {
+  #{$prop}: $val;
+  #{$prop}: calc-rem($val);
+}

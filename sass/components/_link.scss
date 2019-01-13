@@ -1,0 +1,8 @@
+.link {
+  color: $white;
+  padding: 1rem;
+  transition: color .2s ease-in-out;
+  &:hover {
+    color: $m-blue;
+  }
+}

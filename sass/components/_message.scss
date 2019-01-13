@@ -1,0 +1,11 @@
+.message {
+  @extend %principal-text--small;
+  display: none;
+  background: $msg-background;
+  padding: 1rem;
+  text-align: left;
+}
+
+.message--active {
+  display: block;
+}

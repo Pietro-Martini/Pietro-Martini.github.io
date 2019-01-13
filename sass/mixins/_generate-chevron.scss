@@ -1,0 +1,20 @@
+@mixin generate-chevron($thickness: .2rem, $size: 3rem, $color: #000000, $dir: 'left', $translate: null, $position: absolute) {
+  $transform: null;
+
+  @if $dir == 'left' { $transform: $translate rotate(-135deg); }
+  @if $dir == 'right' { $transform: $translate rotate(45deg); }
+  @if $dir == 'bottom' { $transform: $translate rotate(135deg); }
+  @if $dir == 'top' { $transform: $translate rotate(-45deg); }
+  
+  &::before {
+  	content: '';
+  	position: $position;
+    border-width: $thickness $thickness 0 0;
+    border-style: solid;
+    border-color: $color;
+  	display: inline-block;
+  	height: $size;
+    width: $size;
+    transform: $transform;
+  }
+}

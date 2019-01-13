@@ -1,0 +1,42 @@
+.menu-toggle {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 2.2rem;
+  z-index: 10;
+
+  @include mq(tablet-wide) {
+    right: 4rem;
+  }
+
+  span {
+    width: 35px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: $white;
+    transition: 0.4s;
+  }
+
+  &--active {
+    span {
+      &:first-child {
+        -webkit-transform: rotate(-45deg) translate(-8px, 0px);
+        transform: rotate(-45deg) translate(-8px, 0px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        -webkit-transform: rotate(45deg) translate(-14px, -5px);
+        transform: rotate(45deg) translate(-14px, -5px);
+      }
+    }
+  }
+}

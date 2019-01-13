@@ -1,0 +1,21 @@
+.sign-up {
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  > * {
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &__caption {
+    @extend %principal-text--small;
+    @extend %principal-text--gray;
+
+    a {
+      display: block;
+      color: $white;
+    }
+  }
+}

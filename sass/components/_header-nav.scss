@@ -1,0 +1,16 @@
+.header-nav {
+  @include mq(tablet-wide, max) {
+    display: none;
+  }
+
+  flex-basis: 37%;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 1rem;
+  }
+}

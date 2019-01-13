@@ -1,0 +1,29 @@
+.btn {
+  &-container {
+    position: relative;
+    svg {
+      position: absolute;
+      top: 50%;
+      right: 38%;
+      transform: translate(-50%, -50%);
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: $white;
+  width: 100%;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+  border-radius: 2px;
+
+  &--blue {
+    background: $btn-background;
+
+    &:hover {
+      background: lighten($btn-background, 5%);
+    }
+  }
+}
