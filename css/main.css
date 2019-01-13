@@ -280,7 +280,7 @@ footer {
   height: 100vh;
   width: 100%;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity .6s ease-in-out;
   text-align: center; }
   .side-nav__nav {
     display: flex;
