@@ -7,8 +7,7 @@
   width: 100%;
   opacity: 0;
   z-index: 5;
-  transform: translateY(-100%);
-  transition: transform .3s ease-in-out, opacity .4s ease-in-out;
+  transition: opacity .3s ease-in-out;
   text-align: center;
 
   &__nav {
@@ -25,7 +24,6 @@
   }
 
   &--active {
-    transform: translateY(0);
     opacity: 1;
   }
 }
