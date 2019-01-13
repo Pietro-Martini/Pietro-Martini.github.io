@@ -207,6 +207,7 @@ footer {
     color: #ffffff; }
 
 .form__input-group {
+  border-radius: 2px;
   border: 1px solid white;
   border-bottom: none;
   display: flex;
