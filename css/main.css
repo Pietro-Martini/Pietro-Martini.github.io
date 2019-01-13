@@ -281,7 +281,8 @@ footer {
   width: 100%;
   opacity: 0;
   transition: all .6s ease-in-out;
-  text-align: center; }
+  text-align: center;
+  z-index: -1; }
   .side-nav__nav {
     display: flex;
     align-items: center;
