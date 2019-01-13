@@ -6,7 +6,6 @@
   height: 100vh;
   width: 100%;
   opacity: 0;
-  z-index: 5;
   transition: opacity .3s ease-in-out;
   text-align: center;
 
@@ -25,5 +24,6 @@
 
   &--active {
     opacity: 1;
+    z-index: 5;
   }
 }
