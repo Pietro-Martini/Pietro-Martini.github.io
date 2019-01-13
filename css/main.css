@@ -273,7 +273,7 @@ footer {
     padding: 1rem; }
 
 .side-nav {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   background: rgba(12, 74, 121, 0.9);
