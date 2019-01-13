@@ -1,4 +1,5 @@
 .btn {
+  @extend %principal-text;
   &-container {
     position: relative;
     svg {
