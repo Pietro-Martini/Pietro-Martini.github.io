@@ -39,6 +39,13 @@
     width: 1rem;
     height: 1rem; }
 
+@media only screen and (min-width: 1024px) {
+  .list, .list--principal, .list--secondary {
+    display: flex;
+    justify-content: space-between; }
+    .list > li, .list--principal > li, .list--secondary > li {
+      padding: 1rem; } }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -234,13 +241,6 @@ footer {
 .list--secondary li {
   margin-top: 1rem;
   margin-bottom: 1rem; }
-
-@media only screen and (min-width: 1024px) {
-  .list {
-    display: flex;
-    justify-content: space-between; }
-    .list > li {
-      padding: 1rem; } }
 
 .message {
   display: none;

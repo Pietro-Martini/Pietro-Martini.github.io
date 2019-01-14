@@ -1,0 +1,10 @@
+%list {
+  @include mq(tablet-wide) {
+    display: flex;
+    justify-content: space-between;
+
+    > li {
+      padding: 1rem;
+    }
+  }
+}

@@ -1,24 +1,18 @@
 .list {
+  @extend %list;
   &--principal {
+    @extend %list;
     li {
       @extend %principal-text;
     }
   }
 
   &--secondary {
+    @extend %list;
     li {
       @extend %secondary-header;
       margin-top: 1rem;
       margin-bottom: 1rem;
-    }
-  }
-
-  @include mq(tablet-wide) {
-    display: flex;
-    justify-content: space-between;
-
-    > li {
-      padding: 1rem;
     }
   }
 }
