@@ -6,10 +6,6 @@
   height: 2.2rem;
   z-index: 10;
 
-  @include mq(tablet-wide) {
-    right: 4rem;
-  }
-
   span {
     width: 35px;
     height: 3px;
