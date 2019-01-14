@@ -1,4 +1,4 @@
-.btn, .principal-text, .sign-up__caption, .message, .copyright, .form input, .list--principal li, .side-nav__item {
+.btn, .btn--blue, .principal-text, .copyright, .sign-up__caption, .message, .form input, .list--principal li, .side-nav__item {
   font-family: 'Roboto Light', sans-serif;
   font-size: 1.6rem;
   line-height: 24px; }
@@ -26,6 +26,18 @@
     .container, .container--main, .container--footer {
       padding-left: 4rem;
       padding-right: 4rem; } }
+
+.btn, .btn--blue {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #ffffff;
+  width: 100%;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+  border-radius: 2px; }
+  .btn svg, .btn--blue svg {
+    width: 1rem;
+    height: 1rem; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -115,6 +127,25 @@ section {
   padding: 1rem;
   flex: 1; }
 
+@media only screen and (max-width: 1023px) {
+  .statement {
+    text-align: center; } }
+
+@media only screen and (max-width: 1023px) {
+  .copyright {
+    order: 1; } }
+
+.sign-up {
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto; }
+  .sign-up > *:not(:last-child) {
+    margin-bottom: 2.5rem; }
+  .sign-up__caption a {
+    display: block;
+    color: #ffffff; }
+
 html, body {
   height: 100%; }
 
@@ -153,21 +184,10 @@ footer {
       display: flex;
       flex-direction: column; } }
 
-.btn {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  color: #ffffff;
-  width: 100%;
-  cursor: pointer;
-  transition: background .2s ease-in-out;
-  border-radius: 2px; }
-  .btn svg {
-    width: 1rem;
-    height: 1rem; }
-  .btn--blue {
-    background: #349bea; }
-    .btn--blue:hover {
-      background: #4ba6ec; }
+.btn--blue {
+  background: #349bea; }
+  .btn--blue:hover {
+    background: #4ba6ec; }
 
 .primary-header--med {
   font-size: 4rem; }
@@ -181,26 +201,11 @@ footer {
 .principal-text--small {
   font-size: 1.2rem; }
 
-.sign-up__caption, .message, .copyright {
+.copyright, .sign-up__caption, .message {
   font-size: 1.2rem; }
 
 .sign-up__caption {
   color: #d1d2d3; }
-
-@media only screen and (max-width: 1023px) {
-  .statement {
-    text-align: center; } }
-
-.sign-up {
-  text-align: center;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto; }
-  .sign-up > *:not(:last-child) {
-    margin-bottom: 2.5rem; }
-  .sign-up__caption a {
-    display: block;
-    color: #ffffff; }
 
 .form__input-group {
   border-radius: 2px;
@@ -318,10 +323,6 @@ footer {
   .menu-toggle--active span:last-child {
     -webkit-transform: rotate(45deg) translate(-14px, -5px);
     transform: rotate(45deg) translate(-14px, -5px); }
-
-@media only screen and (max-width: 1023px) {
-  .copyright {
-    order: 1; } }
 
 @font-face {
   font-family: 'Roboto Bold';
