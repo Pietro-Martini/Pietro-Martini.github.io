@@ -3,11 +3,29 @@
   font-size: 1.6rem;
   line-height: 24px; }
 
+.primary-header, .primary-header--med, .primary-header--lg {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  font-family: 'Roboto Bold', sans-serif;
+  line-height: 60px; }
+
 .secondary-header, .list--secondary li {
   font-size: 1.25rem;
   font-family: 'Roboto Regular', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px; }
+
+.container, .container--main, .container--footer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px; }
+  @media only screen and (min-width: 1024px) {
+    .container, .container--main, .container--footer {
+      padding-left: 4rem;
+      padding-right: 4rem; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -119,30 +137,21 @@ footer {
     footer {
       text-align: center; } }
 
-.container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1500px; }
-  @media only screen and (min-width: 1024px) {
-    .container {
-      padding-left: 4rem;
-      padding-right: 4rem; } }
-  @media only screen and (min-width: 1024px) {
-    .container--footer, .container--main {
+@media only screen and (min-width: 1024px) {
+  .container--main, .container--footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; } }
+
+.container--main {
+  max-width: 1000px; }
+
+.container--footer {
+  align-items: center; }
+  @media only screen and (max-width: 1023px) {
+    .container--footer {
       display: flex;
-      justify-content: space-between;
-      align-items: center; } }
-  .container--footer {
-    align-items: center; }
-    @media only screen and (max-width: 1023px) {
-      .container--footer {
-        display: flex;
-        flex-direction: column; } }
-  .container--main {
-    max-width: 1000px; }
+      flex-direction: column; } }
 
 .btn {
   padding-top: 1.5rem;
@@ -160,11 +169,11 @@ footer {
     .btn--blue:hover {
       background: #4ba6ec; }
 
-.primary-header {
-  font-size: 5rem;
-  margin-bottom: 1rem;
-  font-family: 'Roboto Bold', sans-serif;
-  line-height: 60px; }
+.primary-header--med {
+  font-size: 4rem; }
+
+.primary-header--lg {
+  font-size: 5rem; }
 
 .principal-text--gray {
   color: #d1d2d3; }
@@ -181,13 +190,6 @@ footer {
 @media only screen and (max-width: 1023px) {
   .statement {
     text-align: center; } }
-
-.statement__primary-header {
-  font-size: 5rem;
-  margin-bottom: 1rem; }
-
-.statement__secondary-header {
-  font-size: 1.5rem; }
 
 .sign-up {
   text-align: center;

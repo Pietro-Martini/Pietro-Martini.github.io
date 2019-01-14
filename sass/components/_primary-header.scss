@@ -1,6 +1,14 @@
 .primary-header {
-  font-size: 5rem;
-  margin-bottom: 1rem;
-  font-family: 'Roboto Bold', sans-serif;
-  line-height: 60px;
+  @extend %primary-header;
+
+  &--med {
+    @extend %primary-header;
+    font-size: 4rem;
+  }
+
+  &--lg {
+    @extend %primary-header;
+    font-size: 5rem;
+  }
+
 }
