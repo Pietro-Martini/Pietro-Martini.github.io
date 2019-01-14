@@ -57,6 +57,13 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
+br {
+	@include mq(tablet-wide, max) {
+		content: " ";
+		display: none;
+	}
+}
+
 a {
 	text-decoration: none;
 }
