@@ -16,8 +16,8 @@
   letter-spacing: 1px; }
 
 .container, .container--main, .container--footer {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -117,7 +117,7 @@ input {
   color: #ffffff; }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../static/imgs/background.jpg"); }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/background.jpg"); }
 
 svg {
   height: 2rem;
@@ -326,16 +326,16 @@ footer {
 
 @font-face {
   font-family: 'Roboto Bold';
-  src: url("../roboto/Roboto-Bold.ttf") format("truetype"); }
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Roboto Light';
-  src: url("../roboto/Roboto-Light.ttf") format("truetype"); }
+  src: url("../fonts/roboto/Roboto-Light.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Roboto Condensed Regular';
-  src: url("../roboto/RobotoCondensed-Regular.ttf") format("truetype"); }
+  src: url("../fonts/roboto/RobotoCondensed-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Roboto Regular';
-  src: url("../roboto/Roboto-Regular.ttf") format("truetype"); }
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype"); }
