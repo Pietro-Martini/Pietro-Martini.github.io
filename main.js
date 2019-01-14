@@ -1,17 +1,17 @@
 var SidebarToggle = (function () {
   // DOM references
 
-  var menuToggleDOM = document.querySelector('.menu-toggle')
-  var sideNavDOM = document.querySelector('.side-nav')
+  var _menuToggleDOM = document.querySelector('.menu-toggle')
+  var _sideNavDOM = document.querySelector('.side-nav')
 
   // Handlers
 
-  var handleMenuToggleClick = function() {
-    menuToggleDOM.classList.toggle('menu-toggle--active')
-    sideNavDOM.classList.toggle('side-nav--active')
+  var _handleMenuToggleClick = function() {
+    _menuToggleDOM.classList.toggle('menu-toggle--active')
+    _sideNavDOM.classList.toggle('side-nav--active')
   }
 
-  menuToggleDOM.addEventListener('click', handleMenuToggleClick, false)
+  _menuToggleDOM.addEventListener('click', _handleMenuToggleClick, false)
 })()
 
 var FormValidation = (function () {
